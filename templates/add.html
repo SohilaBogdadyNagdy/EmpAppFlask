@@ -1,0 +1,27 @@
+
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<form method="POST" action="" >
+{{ empform.hidden_tag() }}
+
+  <center>
+  	<h3> new employee page </h3>
+
+    <p> employee first name </p>
+  	{{empform.first_name}} 
+  	<br >
+  	<hr />
+  	<p>employee last  name </p>
+
+  	{{empform.last_name}}
+    <br ><hr />
+    <p> employee caree level </p>
+    {{empform.career_level}} 
+    <br /> <hr /> 
+    <input type='submit' value ="register new emp" />
+  </center >	
+</form>  
+{% endblock %}

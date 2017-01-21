@@ -1,0 +1,21 @@
+
+
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<br /> <hr />
+<center>
+	<h4>
+	<b> Home page , list all  our employees </b>
+    </h4>
+     {%  for emp in  empdata %}
+       employee : {{ emp }}
+       <br /> <hr /> 
+
+     {% endfor %}
+</center>
+<br /> <hr />
+
+{% endblock %}
